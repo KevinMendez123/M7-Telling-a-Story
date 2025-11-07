@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://e5ycpsjrg0jl"]
+[gd_scene load_steps=8 format=3 uid="uid://e5ycpsjrg0jl"]
 
 [ext_resource type="Shader" uid="uid://cs15e2hgd2lan" path="res://assets/sliding_background.gdshader" id="1_ee4bf"]
 [ext_resource type="Theme" uid="uid://drays61pfu7xc" path="res://lessons/main_theme.tres" id="1_kbped"]
+[ext_resource type="Script" uid="uid://cvyjtb2pbe8s4" path="res://dialogue.gd" id="2_fj5cn"]
 [ext_resource type="Texture2D" uid="uid://bnly1gkbxw6b5" path="res://assets/bubble_pattern.png" id="2_kbped"]
 [ext_resource type="Texture2D" uid="uid://copkt78vgp37i" path="res://assets/sophia.png" id="3_fj5cn"]
 [ext_resource type="Texture2D" uid="uid://d000xjtr4iqtk" path="res://assets/emotion_regular.png" id="4_iy58a"]
@@ -23,6 +24,7 @@ offset_bottom = -35.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_kbped")
+script = ExtResource("2_fj5cn")
 
 [node name="Background" type="ColorRect" parent="."]
 material = SubResource("ShaderMaterial_6a6wx")
@@ -66,20 +68,22 @@ expand_mode = 1
 stretch_mode = 5
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
+unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
 anchor_top = 0.018000001
 anchor_right = 0.97700006
 anchor_bottom = 1.018
-offset_left = 228.0
-offset_top = 508.19
-offset_right = -143.92017
-offset_bottom = -469.81006
+offset_left = 124.0
+offset_top = 424.19
+offset_right = -96.920166
+offset_bottom = -485.81006
 text = "Hello World!"
 fit_content = true
 
 [node name="NextButton" type="Button" parent="."]
+unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.99200004
